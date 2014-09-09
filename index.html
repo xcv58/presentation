@@ -72,16 +72,26 @@
 	</section>
 
 	<section>
-	  <h2>RDF (Resource Description Framework)</h2>
+	  <h2>RDF Graph</h2>
+	  <h3>Resource Description Framework</h3>
 	  <p>
 	    <ul>
 	      <li>Triple</li>
 	      <li>Complicated relations</li>
-	      <li></li>
+	      <li>All advantages in graph</li>
 	    </ul>
 	  </p>
 	</section>
 
+	<section>
+	  <a href="https://docs.google.com/presentation/d/1FDnt_ec4ObfIar8c5PenZlxPSMHr5h7m7eZSRS7ZPG0/pub?start=false&loop=false&delayms=3000" target="_blank">
+	    <h2>Niyazi Sorkunlu</h2>
+	  </a>
+	</section>
+	<section>
+	  <iframe src="https://docs.google.com/presentation/d/1FDnt_ec4ObfIar8c5PenZlxPSMHr5h7m7eZSRS7ZPG0/embed?start=false&loop=false&delayms=60000" frameborder="0" width="1280" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+	</section>
+	
 	<section>
 	  <h2>Datasets</h2>
 	  <ul>
@@ -100,9 +110,9 @@
 	    
 	    <p class="fragment">Two subsets</p>
 	    <ul>
-	      <li class="fragment">Social</li>
-	      <li class="fragment">Referral</li>
-	      <li class="fragment">Labels</li>
+	      <li class="fragment">Social: 0.2 million edges</li>
+	      <li class="fragment">Referral: 3.6 million edges</li>
+	      <li class="fragment">Labels: 2013 anomalies</li>
 	      <!-- <li class="fragment">Social: relationship between individual and organization</li> -->
 	      <!-- <li class="fragment">Referral: patients referral information between all nodes</li> -->
 	      <!-- <li class="fragment">Labels: targets, anomalies</li> -->
@@ -165,6 +175,112 @@
 	  </section>
 	  <section>
 	    <h2>PageRank Like Algorithm</h2>
+	    <p>Randomly set part of anomalies as seed</p>
+	    <p>Iteratively pass anomaly score by edges in each subgraph</p>
+	    <p>Add up all subgraph anomaly score as final score in one iteration</p>
+	  </section>
+	  <section>
+	    <h3>0.3 seeds</h3>
+	    <iframe src="//www.slideshare.net/slideshow/embed_code/38853230?rel=0" width="670" height="715" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+	  </section>
+	  <section>
+	    <h3>0.5 seeds</h3>
+	    <iframe src="//www.slideshare.net/slideshow/embed_code/38853242?rel=0" width="670" height="715" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+	  </section>
+	  <section>
+	    <h3>0.9 seeds</h3>
+	    <iframe src="//www.slideshare.net/slideshow/embed_code/38853248?rel=0" width="670" height="715" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+	  </section>
+	  <section>
+	    <h3>Distribution of anomaly score in subgraph</h3>
+	    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/14WR0WgG3idwPNLealsxXxwiy17lQjbrBssBGoM74rKs/pubchart?oid=478035080&amp;format=interactive"></iframe>
+	    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/14WR0WgG3idwPNLealsxXxwiy17lQjbrBssBGoM74rKs/pubchart?oid=1006622133&amp;format=interactive"></iframe>
+	  </section>
+	  <section>
+	    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/14WR0WgG3idwPNLealsxXxwiy17lQjbrBssBGoM74rKs/pubchart?oid=391714681&amp;format=interactive"></iframe>
+	    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/14WR0WgG3idwPNLealsxXxwiy17lQjbrBssBGoM74rKs/pubchart?oid=100739645&amp;format=interactive"></iframe>
+	  </section>
+	  <section>
+	    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/14WR0WgG3idwPNLealsxXxwiy17lQjbrBssBGoM74rKs/pubchart?oid=585139036&amp;format=interactive"></iframe>
+	    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/14WR0WgG3idwPNLealsxXxwiy17lQjbrBssBGoM74rKs/pubchart?oid=835060484&amp;format=interactive"></iframe>
+	  </section>
+	  <section>
+	    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/14WR0WgG3idwPNLealsxXxwiy17lQjbrBssBGoM74rKs/pubchart?oid=1856187866&amp;format=interactive"></iframe>
+	    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/14WR0WgG3idwPNLealsxXxwiy17lQjbrBssBGoM74rKs/pubchart?oid=1044550714&amp;format=interactive"></iframe>
+	  </section>
+	  <section>
+	    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/14WR0WgG3idwPNLealsxXxwiy17lQjbrBssBGoM74rKs/pubchart?oid=211493811&amp;format=interactive"></iframe>
+	    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/14WR0WgG3idwPNLealsxXxwiy17lQjbrBssBGoM74rKs/pubchart?oid=1884758703&amp;format=interactive"></iframe>
+	  </section>
+	  <section>
+	    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/14WR0WgG3idwPNLealsxXxwiy17lQjbrBssBGoM74rKs/pubchart?oid=522974550&amp;format=interactive"></iframe>
+	    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/14WR0WgG3idwPNLealsxXxwiy17lQjbrBssBGoM74rKs/pubchart?oid=411761810&amp;format=interactive"></iframe>
+	  </section>
+	  <section>
+	    <h2>How to improve?</h2>
+	    <ul>
+	      <li>More information</li>
+	      <li>Referral count</li>
+	      <li>Complex algorithm</li>
+	    </ul>
+	  </section>
+	</section>
+
+	<section>
+	  <section>
+	    <h2>Network Connections</h2>
+	    
+	    <p>Person, anomalies, related information</p>
+	  </section>
+	  <section>
+	    <h2>Statistics</h2>
+	    
+	    <!-- <p> -->
+	    <!--   <\!-- 1436 unique nodes -\-> -->
+	    <!--   <\!-- 1701 -\-> -->
+	    <!--   2209 unique nodes -->
+	    <!--   <br> -->
+	    <!--   131 connection types -->
+	    <!-- </p> -->
+	    <table class="reveal">
+	      <tr>
+		<td>Unique Nodes</td>
+		<td>2209</td>
+		<td>Connection Types</td>
+		<td>131</td>
+	      </tr>
+	      <tr>
+	      </tr>
+	    </table>
+	   <br>
+	   
+	    <!-- <ul> -->
+	    <!--   <li>Person 712</li> -->
+	    <!--   <li>Organization 439</li> -->
+	    <!--   <li>Event 214</li> -->
+	    <!--   <li>Location 454</li> -->
+	    <!--   <li>Media 389</li> -->
+	    <!-- </ul> -->
+	    <table class="reveal">
+	      <tr>
+		<td>Person</td>
+		<td>712</td>
+		<td>Organization</td>
+		<td>439</td>
+		<td>Event</td>
+		<td>214</td>
+	      </tr>
+	      <tr>
+		<td>Location</td>
+		<td>454</td>
+		<td>Media</td>
+		<td>389</td>
+	      </tr>
+	    </table>
+	  </section>
+
+	  <section>
+	    <iframe src="//www.slideshare.net/slideshow/embed_code/38851665" width="679" height="811" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> 
 	  </section>
 	</section>
 
